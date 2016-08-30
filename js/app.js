@@ -1,5 +1,5 @@
 $(function() {
-
+    
     $('#search-form').submit(function(event) {
         event.preventDefault();
         var searchTerm = $('#search-box').val();
@@ -34,7 +34,7 @@ $(function() {
     }
 
     function populateSearchResult(pictureResult, linkResult, channelNameResult) {
-        $('.result-list').append('<li class="result-item"><a href="' + linkResult + '"><img src="' + pictureResult + '"></a><button class="show_channel_button">Show ' + channelNameResult + ' videos</button></li>');
+        $('.result-list').append('<li class="result-item"><a href="' + linkResult + '"data-lity><img src="' + pictureResult + '" alt="YouTube"></a><button class="show_channel_button">Show ' + channelNameResult + ' videos</button></li>');
     }
 
 });
